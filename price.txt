@@ -1,0 +1,33 @@
+<%@include  file="../header/admin_head.jsp" %>
+<form action="/Android_kseb/ad_ad_price_act" method="POST">
+    
+    <table border="1" align="center">
+        <p align="center">PRICE SETTINGS</p>
+        <tbody>
+            <tr>
+                <td>SLAB NAME</td>
+                <td><input type="text" name="slabName"  pattern="[a-zA-Z \s]{0,20}" title="enter a valid  name" required="" /></td>
+            </tr>
+            <tr>
+                <td>STARTING UNIT</td>
+                <td><input type="text" name="startingUnit" pattern="[0-9]{0,20}" title="enter a valid unit" required=""  /></td>
+            </tr>
+            <tr>
+                <td>ENDING UNIT</td>
+                <td><input type="text" name="endingUnit"  pattern="[0-9]{0,20}" title="enter a valid unit" required="" /></td>
+            </tr>
+            <tr>
+                <td>UNIT PRICE</td>
+                <td><input type="number" min="2.50" max="500"  name="unitPrice"   title="enter a valid price" required=""/></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+              <input type="submit" value="SUBMIT" name="SUBMIT" /> </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    
+</form>
+<%@include  file="../header/footer.jsp" %>
